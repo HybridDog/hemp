@@ -556,6 +556,7 @@ minetest.register_craft({
 })
 
 -- mapgen
+--[[
 if minetest.setting_getbool("enable_hemp_mapgen") ~= false then
 	local mg_params = minetest.get_mapgen_params()
 	if mg_params.mgname ~= "singlenode" then
@@ -577,7 +578,7 @@ if minetest.setting_getbool("enable_hemp_mapgen") ~= false then
 			decoration = "hemp:hemp_8"
 		})
 	end
-end
+end--]]
 
 -- TRM
 if minetest.get_modpath("treasurer") then
