@@ -10,7 +10,7 @@
 -- }
 
 -- rope function
-local creative = minetest.setting_getbool("creative_mode")
+local creative = minetest.setting_getbool"creative_mode"
 local place_rope = function(pos, itemstack)
 	if itemstack == nil and itemstack:get_count() <= 1 then
 		return
